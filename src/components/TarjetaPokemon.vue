@@ -7,13 +7,13 @@
       <div class="row">
         <div class="col-md-6">
           <h3>{{ pokemon.nombre }}</h3>
-          <img :src="pokemon.imagen" alt="" />
+          <img :src="pokemon.imagen" alt="" width="100px"/>
         </div>
         <div class="col-md-6">
           <ul>
-            <h5 v-for="(frase, index) in pokemon.frases" :key="frase.index" class="text-primary mt-3">
+            <h4 v-for="(frase, index) in pokemon.frases" :key="frase.index" class="text-primary mt-3">
             <span class="text-danger">{{index + 1}}</span> - {{ frase.frase }}
-            </h5>
+            </h4>
           </ul>
         </div>
       </div>
